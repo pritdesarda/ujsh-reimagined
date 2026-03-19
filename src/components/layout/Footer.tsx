@@ -88,10 +88,30 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Developer Section */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container py-6">
+          <h4 className="font-display font-semibold mb-3 text-sm uppercase tracking-wider opacity-70 text-center">Developed By</h4>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm opacity-80">
+            <div className="text-center">
+              <p className="font-semibold">Gagan Jain</p>
+              <p className="text-xs opacity-70">Batch 2022-2025</p>
+            </div>
+            <span className="hidden sm:inline opacity-40">•</span>
+            <div className="text-center">
+              <p className="font-semibold">Devansh Shah</p>
+              <p className="text-xs opacity-70">Batch 2021-2024</p>
+            </div>
+          </div>
+          <div className="text-center mt-2">
+            <Link to="/developer" className="text-xs opacity-60 hover:opacity-100 transition-opacity underline">View Developer Profiles</Link>
+          </div>
+        </div>
+      </div>
+
       <div className="border-t border-primary-foreground/10">
         <div className="container py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs opacity-60">
           <p>&copy; {new Date().getFullYear()} United Jain Students Home. All rights reserved.</p>
-          <Link to="/developer" className="hover:opacity-100 transition-opacity">Developer Credits</Link>
         </div>
       </div>
     </footer>
