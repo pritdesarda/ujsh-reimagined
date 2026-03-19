@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import hostelLogo from "@/assets/hostel_logo.png";
 
 const quickLinks = [
@@ -28,11 +28,28 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img src={hostelLogo} alt="UJSH" className="h-10 w-10" />
-              <span className="font-display font-bold text-lg">UJSH</span>
+              <span className="font-display font-bold text-lg">United Jain Students Home</span>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed">
-              United Jain Students Home — a premier accommodation facility exclusively for Jain students in Sion, Mumbai.
-            </p>
+            <div className="text-sm opacity-80 leading-relaxed space-y-1">
+              <p>64 United Jain Student Home Rd,</p>
+              <p>Jain Society,</p>
+              <p>Sion, Mumbai, Maharashtra 400022</p>
+            </div>
+            <div className="mt-4 space-y-2 text-sm opacity-80">
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4 shrink-0" />
+                <a href="tel:+918291829191" className="hover:opacity-100 transition-opacity">+91 82918 29191</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4 shrink-0" />
+                <span>Mon to Fri 9am to 6pm</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4 shrink-0" />
+                <a href="mailto:ujshsion1@gmail.com" className="hover:opacity-100 transition-opacity">ujshsion1@gmail.com</a>
+              </div>
+              <p className="text-xs italic opacity-70 mt-2">Send us your query anytime!</p>
+            </div>
           </div>
 
           {/* Quick Links */}
