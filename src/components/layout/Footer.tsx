@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import hostelLogo from "@/assets/hostel_logo.png";
 
 const quickLinks = [
   { to: "/about", label: "About Us" },
