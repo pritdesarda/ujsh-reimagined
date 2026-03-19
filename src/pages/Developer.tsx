@@ -10,9 +10,9 @@ const developers = [
     native: "Jamner, Jalgaon, Maharashtra",
     contact: "7249413017",
     bio: "An Engineering student and passionate full-stack developer, Gagan specializes in creating robust, user-friendly web solutions.",
-    email: "gaganjain@gmail.com",
+    email: "gaganjain1717@gmail.com",
     links: {
-      linkedin: "https://www.linkedin.com/in/gagan-jain",
+      linkedin: "https://www.linkedin.com/in/gagan-jain01",
       github: "https://github.com/gaganjain",
       instagram: "https://www.instagram.com/gagan_jain",
     },
