@@ -10,6 +10,7 @@ const developers = [
     native: "Jamner, Jalgaon, Maharashtra",
     contact: "7249413017",
     bio: "An Engineering student and passionate full-stack developer, Gagan specializes in creating robust, user-friendly web solutions.",
+    email: "gaganjain@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/in/gagan-jain",
       github: "https://github.com/gaganjain",
@@ -21,11 +22,12 @@ const developers = [
     batch: "Batch 2021-2024",
     native: "Ahmedabad, Gujarat",
     contact: "6353338281",
-    bio: "A creative and skilled developer with a focus on front-end technologies, loves building aesthetically pleasing and high-performing applications with modern frameworks.",
+    bio: "A creative and skilled developer with a focus on front-end technologies, loves building aesthetically pleasing and high-performing applications with modern frameworks like Angular and Vue.js.",
+    email: "devanshshah@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/in/devansh-shah",
       github: "https://github.com/devanshshah",
-      instagram: "https://www.instagram.com/gagan_jain",
+      instagram: "https://www.instagram.com/devansh_shah",
     },
   },
 ];
@@ -55,6 +57,9 @@ export default function Developer() {
                   </a>
                   <a href={dev.links.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Github className="h-4 w-4" />
+                  </a>
+                  <a href={`mailto:${dev.email}`} className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Mail className="h-4 w-4" />
                   </a>
                   <a href={dev.links.instagram} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Instagram className="h-4 w-4" />
