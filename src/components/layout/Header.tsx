@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
+import hostelLogo from "@/assets/hostel_logo.png";
 
 const managementLinks = [
   { to: "/trust_list", label: "Trust List" },
@@ -60,7 +61,7 @@ export default function Header() {
       {/* Main nav */}
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src="/logo.png" alt="UJSH Logo" className="h-10 w-10" />
+          <img src={hostelLogo} alt="UJSH Logo" className="h-10 w-10" />
           <div className="hidden sm:block">
             <span className="text-lg font-display font-bold text-foreground leading-tight">
               United Jain Students Home
