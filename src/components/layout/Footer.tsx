@@ -35,21 +35,6 @@ export default function Footer() {
               <p>Jain Society,</p>
               <p>Sion, Mumbai, Maharashtra 400022</p>
             </div>
-            <div className="mt-4 space-y-2 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 shrink-0" />
-                <a href="tel:+918291829191" className="hover:opacity-100 transition-opacity">+91 82918 29191</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 shrink-0" />
-                <span>Mon to Fri 9am to 6pm</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 shrink-0" />
-                <a href="mailto:ujshsion1@gmail.com" className="hover:opacity-100 transition-opacity">ujshsion1@gmail.com</a>
-              </div>
-              <p className="text-xs italic opacity-70 mt-2">Send us your query anytime!</p>
-            </div>
           </div>
 
           {/* Quick Links */}
