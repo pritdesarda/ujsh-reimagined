@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
+import hostelLogo from "@/assets/hostel_logo.png";
 
 const managementLinks = [
   { to: "/trust_list", label: "Trust List" },
