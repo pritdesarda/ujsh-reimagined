@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.png" alt="UJSH" className="h-10 w-10" />
+              <img src={hostelLogo} alt="UJSH" className="h-10 w-10" />
               <span className="font-display font-bold text-lg">UJSH</span>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
