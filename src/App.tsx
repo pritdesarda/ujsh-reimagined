@@ -3,8 +3,33 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+
+import Layout from "@/components/layout/Layout";
+import Index from "@/pages/Index";
+import About from "@/pages/About";
+import TrustList from "@/pages/management/TrustList";
+import Trustees from "@/pages/management/Trustees";
+import ManagingCommittee from "@/pages/management/ManagingCommittee";
+import LifeMembers from "@/pages/management/LifeMembers";
+import Patrons from "@/pages/management/Patrons";
+import HonorableMembers from "@/pages/management/HonorableMembers";
+import StudentCommittee from "@/pages/management/StudentCommittee";
+import Facilities from "@/pages/Facilities";
+import Mess from "@/pages/facilities/Mess";
+import Canteen from "@/pages/facilities/Canteen";
+import Gymnasium from "@/pages/facilities/Gymnasium";
+import Library from "@/pages/facilities/Library";
+import Sports from "@/pages/facilities/Sports";
+import Rooms from "@/pages/facilities/Rooms";
+import Notices from "@/pages/Notices";
+import Gallery from "@/pages/Gallery";
+import AdmissionProcedure from "@/pages/AdmissionProcedure";
+import Apply from "@/pages/Apply";
+import StudentLife from "@/pages/StudentLife";
+import FAQ from "@/pages/FAQ";
+import Contact from "@/pages/Contact";
+import Developer from "@/pages/Developer";
+import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -15,8 +40,32 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route element={<Layout />}>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/trust_list" element={<TrustList />} />
+            <Route path="/trustee" element={<Trustees />} />
+            <Route path="/managing_committee" element={<ManagingCommittee />} />
+            <Route path="/life_members" element={<LifeMembers />} />
+            <Route path="/patrons" element={<Patrons />} />
+            <Route path="/honorable_members" element={<HonorableMembers />} />
+            <Route path="/student_committee" element={<StudentCommittee />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/facilities/mess" element={<Mess />} />
+            <Route path="/facilities/canteen" element={<Canteen />} />
+            <Route path="/facilities/gymnasium" element={<Gymnasium />} />
+            <Route path="/facilities/library" element={<Library />} />
+            <Route path="/facilities/sports" element={<Sports />} />
+            <Route path="/facilities/rooms" element={<Rooms />} />
+            <Route path="/notices" element={<Notices />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/admission_procedure" element={<AdmissionProcedure />} />
+            <Route path="/apply" element={<Apply />} />
+            <Route path="/student_life" element={<StudentLife />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/developer" element={<Developer />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
