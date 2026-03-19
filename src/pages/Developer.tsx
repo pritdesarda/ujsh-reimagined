@@ -58,6 +58,9 @@ export default function Developer() {
                   <a href={dev.links.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Github className="h-4 w-4" />
                   </a>
+                  <a href={`mailto:${dev.email}`} className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Mail className="h-4 w-4" />
+                  </a>
                   <a href={dev.links.instagram} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Instagram className="h-4 w-4" />
                   </a>
