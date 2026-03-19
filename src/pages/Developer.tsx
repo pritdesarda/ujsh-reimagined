@@ -23,10 +23,10 @@ const developers = [
     native: "Ahmedabad, Gujarat",
     contact: "6353338281",
     bio: "A creative and skilled developer with a focus on front-end technologies, loves building aesthetically pleasing and high-performing applications with modern frameworks like Angular and Vue.js.",
-    email: "devanshshah@gmail.com",
+    email: "devanshshah3007@gmail.com",
     links: {
-      linkedin: "https://www.linkedin.com/in/devansh-shah",
-      github: "https://github.com/devanshshah",
+      linkedin: "https://www.linkedin.com/in/devansh-shah-794b49257",
+      github: "https://github.com/3007devansh",
       instagram: "https://www.instagram.com/devansh_shah",
     },
   },
