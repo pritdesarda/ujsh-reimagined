@@ -22,11 +22,12 @@ const developers = [
     batch: "Batch 2021-2024",
     native: "Ahmedabad, Gujarat",
     contact: "6353338281",
-    bio: "A creative and skilled developer with a focus on front-end technologies, loves building aesthetically pleasing and high-performing applications with modern frameworks.",
+    bio: "A creative and skilled developer with a focus on front-end technologies, loves building aesthetically pleasing and high-performing applications with modern frameworks like Angular and Vue.js.",
+    email: "devanshshah@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/in/devansh-shah",
       github: "https://github.com/devanshshah",
-      instagram: "https://www.instagram.com/gagan_jain",
+      instagram: "https://www.instagram.com/devansh_shah",
     },
   },
 ];
