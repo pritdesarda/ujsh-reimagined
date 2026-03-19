@@ -2,12 +2,13 @@ UJSH hostel website rebuild - design system and architecture decisions
 
 ## Design System
 - Fonts: Playfair Display (display), Source Sans 3 (body)
-- Primary: Dark Teal hsl(170, 100%, 15%) — #004d40
-- Secondary: Warm Gold hsl(43, 89%, 38%) — #b8860b
-- Background: Soft Mint hsl(150, 33%, 97%)
-- Foreground: Deep Teal hsl(165, 28%, 14%)
-- Accent: Light Teal hsl(168, 40%, 92%)
-- Muted: Light Sage hsl(155, 30%, 93%)
+- Primary: Deep Saffron hsl(18, 85%, 46%)
+- Secondary: Golden Yellow hsl(45, 90%, 48%)
+- Background: Warm Cream hsl(36, 40%, 97%)
+- Foreground: Deep Brown hsl(15, 30%, 12%)
+- Accent: Soft Peach hsl(30, 60%, 92%)
+- Muted: Light Sand hsl(36, 30%, 92%)
+- NO teal/green primary — user rejected it
 
 ## Architecture
 - React + Vite + Tailwind + React Router
