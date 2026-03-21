@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -23,12 +24,20 @@ export default function Contact() {
     if (form.message.length < 10) return toast({ title: "Message must be at least 10 characters", variant: "destructive" });
 
     setLoading(true);
-    // TODO: Save to Supabase contact_submissions table
-    setTimeout(() => {
+    const { error } = await supabase.from("contact_submissions").insert({
+      name: form.name,
+      email: form.email,
+      subject: form.subject,
+      message: form.message,
+    });
+
+    if (error) {
+      toast({ title: "Error sending message", description: "Please try again later.", variant: "destructive" });
+    } else {
       toast({ title: "Message sent!", description: "Thank you for contacting us. We'll get back to you soon." });
       setForm({ name: "", email: "", subject: "", message: "" });
-      setLoading(false);
-    }, 1000);
+    }
+    setLoading(false);
   };
 
   return (
@@ -36,13 +45,12 @@ export default function Contact() {
       <PageHero title="Contact Us" subtitle="Get in touch with UJSH" />
       <SectionWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* Info */}
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-primary mt-0.5 shrink-0" />
               <div>
                 <h3 className="font-display font-semibold mb-1">Address</h3>
-                <p className="text-sm text-muted-foreground">Sion, Mumbai, Maharashtra, India</p>
+                <p className="text-sm text-muted-foreground">64 United Jain Student Home Rd, Jain Society, Sion, Mumbai, Maharashtra 400022</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -61,7 +69,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form */}
           <Card className="lg:col-span-2">
             <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-4">
